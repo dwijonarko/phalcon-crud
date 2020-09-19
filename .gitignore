@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
 ### Phalcon template
 /storage/cache/data/*
@@ -47,3 +48,7 @@ supervisor_log/*
 
 ## seed
 #db/seeds/
+=======
+/cache/
+/config/development/
+>>>>>>> 0c08020097b2da7ea0e562519c8108e0ada0df0d

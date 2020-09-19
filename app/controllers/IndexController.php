@@ -13,7 +13,7 @@ class IndexController extends ControllerBase {
 
     public function helloWorldAction() {
 		$this->view->disable();
-		echo "Hello World";
+        echo "Hello World";
 	}
 }
 

@@ -16,14 +16,35 @@ class MainRouter extends Group
     {
         $this->setPaths([
             'namespaces' => 'Application\\Controllers',
-            'controller'=>'index'
         ]);
 
         $this->add(
             '/',
             [
-                'action' => 'helloworld'
+                'action' => 'helloworld',
+                'controller'=>'index'
+
             ]
+        );
+        $this->add('/users', array( 
+            'controller' => 'users', 
+            'action' => 'index', 
+         ));
+         $this->add(
+            '/users/save',
+            'Users::save'
+        );
+        $this->add(
+            '/users/{id:[0-9]+}/edit',
+            'Users::edit'
+        );
+        $this->add(
+            '/users/{id:[0-9]+}/update',
+            'Users::update'
+        );
+        $this->add(
+            '/users/{id:[0-9]+}/delete',
+            'Users::delete'
         );
     }
 }

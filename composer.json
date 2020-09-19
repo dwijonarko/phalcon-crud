@@ -27,14 +27,14 @@
     "swiftmailer/swiftmailer": "^5.4",
     "phalcongelist/php-diff": "~2.0",
     "phalcon/incubator": "~3.0.0",
-    "nesbot/Carbon": "*",
+    "nesbot/carbon": "*",
     "kirimemail/phalcon-datatables": "^1.0",
     "vlucas/phpdotenv": "2.*",
     "monolog/monolog": "1.*",
     "ramsey/uuid": "3.*",
     "alphayax/get_opt": "3.0.0",
     "verdant/xml2array": "dev-master",
-    "sentry/sentry": "dev-master",
+    "sentry/sentry": "1.11.0",
     "voku/anti-xss": "dev-master",
     "ezyang/htmlpurifier": "dev-master",
     "peppeocchi/php-cron-scheduler": "^2.3",
@@ -58,6 +58,9 @@
     "whoops/phalcon": "^2.0"
   },
   "autoload": {
+    "files": [
+      "bootstrap/helpers.php"
+    ],
     "psr-4": {
       "Application\\": "app/library",
       "Application\\Models\\": "app/models",
@@ -66,10 +69,7 @@
       "Application\\Provider\\": "app/provider",
       "Application\\Listener\\": "app/listener",
       "Application\\Router\\": "app/router"
-    },
-    "files": [
-      "bootstrap/helpers.php"
-    ]
+    }
   },
   "autoload-dev": {
     "psr-4": {
