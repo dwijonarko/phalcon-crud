@@ -21,8 +21,8 @@ class MainRouter extends Group
         $this->add(
             '/',
             [
-                'action' => 'helloworld',
-                'controller'=>'index'
+                'action' => 'index',
+                'controller'=>'users'
 
             ]
         );
